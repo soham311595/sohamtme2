@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Studies</title>
+  <style>
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      overflow-y: scroll;
+      padding-top: 1700px; 
+    }
+  
+    .typewriter {
+            font-size: 1.2rem;
+            margin: 0 0 1.5rem;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid var(--text-color);
+            animation: typing 4s steps(40, end), blink 0.6s step-end infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+      max-width: 1200px;
+    }
+
+    /* Intro Section */
+    .intro {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 20px;
+      color: #bbb;
+    }
+
+    .intro h1 {
+      font-size: 36px;
+      color: #fff;
+    }
+
+    /* Follow Button Section */
+    .follow-section {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .follow-button {
+      padding: 15px 30px;
+      background-color: rgba(202, 100, 63, 0.725);
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+    }
+
+    .follow-button:hover {
+      background-color: #2c2c2c;
+    }
+
+    .email-input {
+      padding: 10px;
+      width: 250px;
+      margin-top: 10px;
+      border-radius: 10px;
+      border: none;
+      font-size: 16px;
+    }
+
+    .followers-text {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #777;
+    }
+
+    /* Blog Post Boxes */
+    .box {
+      background-color: #1e1e1e;
+      width: 20%;
+      margin: 10px 0;
+      padding: 20px;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      opacity: 0;
+      animation: fadeIn 1s forwards;
+    }
+
+    .box:hover {
+      transform: scale(1.05);
+      background-color: #2c2c2c;
+    }
+
+    .box img {
+      width: 100px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-right: 20px;
+    }
+
+    .box-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .box h2 {
+      font-size: 24px;
+      color: #fff;
+      margin: 0;
+    }
+
+    .box .subtitle {
+      font-size: 16px;
+      color: #bbb;    
+      line-height: 1.5; /* Adjust this value to your preference */
+
+    }
+
+    .box .date {
+      font-size: 14px;
+      color: #777;
+      margin-top: 10px;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    .box:first-child::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: linear-gradient(45deg, #ff6b6b, #fddb92, #1dd1a1, #54a0ff);
+  background-size: 300% 300%;
+  border-radius: 15px;
+  z-index: -1;
+  animation: gradientAnimation 4s linear infinite;
+}
+
+/* Keyframes for animated gradient border */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.box a {
+    text-decoration: none; /* Removes underline from the link */
+}
+
+
+    /* Delay each box to appear one after the other */
+    .box:nth-child(1) {
+      animation-delay: 0.1s;
+    }
+
+    .box:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    .box:nth-child(3) {
+      animation-delay: 0.3s;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Intro Section -->
+    <div class="intro">
+      <h1 >Case Studies 📈🔍</h1>
+      <div >
+        <a style="text-decoration: none;"href="index.html">
+            <h2 style="justify-content: center;"> Home🏠 </h2>
+        </a>
+    </div>
+      <p class="typewriter">
+
+        Here is my personal picks and analysis for each stock (subject to change). Last updated on November 30, 2024.    </div>
+
+    <!-- Follow Section -->
+
+
+    <!-- Blog Post Boxes -->
+    <div class="box">
+    <a href="qbts.html">
+        <h2 style="justify-content: center;"> QBTS </h2>
+    </a>
+    </div>
+    <div class="box">
+        <a href="nvda.html">
+            <h2 style="justify-content: center;"> NVDA </h2>
+        </a>
+    </div>
+
+    <div class="box">
+        <a href="qubt.html">
+            <h2 style="justify-content: center;"> QUBT </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="pltr.html">
+            <h2 style="justify-content: center;"> PLTR </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="rgti.html">
+            <h2 style="justify-content: center;"> RGTI </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="tsla.html">
+            <h2 style="justify-content: center;"> TSLA </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="aapl.html">
+            <h2 style="justify-content: center;"> AAPL </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="nflx.html">
+            <h2 style="justify-content: center;"> NFLX </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="ibm.html">
+            <h2 style="justify-content: center;"> IBM </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="soun.html">
+            <h2 style="justify-content: center;"> SOUN </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="snow.html">
+            <h2 style="justify-content: center;"> SNOW </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="oklo.html">
+            <h2 style="justify-content: center;"> OKLO </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="ai.html">
+            <h2 style="justify-content: center;"> AI </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="vrnt.html">
+            <h2 style="justify-content: center;"> VRNT </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="sofi.html">
+            <h2 style="justify-content: center;"> SOFI </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="crwd.html">
+            <h2 style="justify-content: center;"> CRWD </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="ipg.html">
+            <h2 style="justify-content: center;"> IPG </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="bbai.html">
+            <h2 style="justify-content: center;"> BBAI </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="lscc.html">
+            <h2 style="justify-content: center;"> LSCC </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="lmnd.html">
+            <h2 style="justify-content: center;"> LMND </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="veri.html">
+            <h2 style="justify-content: center;"> VERI</h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="xela.html">
+            <h2 style="justify-content: center;">  XELA </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="oust.html">
+            <h2 style="justify-content: center;"> OUST </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="qs.html">
+            <h2 style="justify-content: center;"> QS </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="splk.html">
+            <h2 style="justify-content: center;"> SPLK </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="ddog.html">
+            <h2 style="justify-content: center;"> DDOG </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="asan.html">
+            <h2 style="justify-content: center;"> ASAN </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="upst.html">
+            <h2 style="justify-content: center;"> UPST </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="nio.html">
+            <h2 style="justify-content: center;"> NIO </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="chpt.html">
+            <h2 style="justify-content: center;"> CHPT </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="mq.html">
+            <h2 style="justify-content: center;"> MQ </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="bldp.html">
+            <h2 style="justify-content: center;"> BLDP </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="nstg.html">
+            <h2 style="justify-content: center;"> NSTG </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="wmt.html">
+            <h2 style="justify-content: center;"> WMT </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="amd.html">
+            <h2 style="justify-content: center;"> AMD </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="msft.html">
+            <h2 style="justify-content: center;"> MSFT </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="goog.html">
+            <h2 style="justify-content: center;"> GOOG </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="ctsh.html">
+            <h2 style="justify-content: center;"> CTSH </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="amzn.html">
+            <h2 style="justify-content: center;"> AMZN </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="adbe.html">
+            <h2 style="justify-content: center;"> ADBE </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="mu.html">
+            <h2 style="justify-content: center;"> MU </h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="nio.html">
+            <h2 style="justify-content: center;"> NIO </h2>
+        </a>
+    </div>
+   
+  </div>
+</body>
+</html>
